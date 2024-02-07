@@ -1,0 +1,51 @@
+.Education {
+    background-image: url('/public/images/umbc.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: white; 
+  }
+  
+  .education-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+  }
+  
+  .Education h1, .Education h2, .Education h3 {
+    color: #fff; 
+  }
+  
+  .Education p, .Education ul {
+    color: #ccc; 
+  }
+  
+  .Education ul {
+    list-style-type: square; 
+  }
+
+  .year-info ul {
+    font-size: 20px; 
+  }
+
+  .education-title{
+    position: center;
+  }
+
+  .passage {
+    text-align: center; 
+    color: white; 
+    font-size: 26px;
+    padding: 20px 0; 
+    filter: brightness(150%);
+  
+  }
+
+  .document-preview-wrapper {
+    background-color: black;
+    padding: 20px; 
+    color: white; 
+  }

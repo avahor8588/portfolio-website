@@ -1,0 +1,24 @@
+/* SocialLinks.css */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+  }
+  
+  .social-links a {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+  }
+  
+  .social-links a:hover {
+    transform: scale(2.3);
+  }
+  
+  .social-links img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  
