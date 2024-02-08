@@ -1,75 +1,66 @@
+// Education.js
 import React from 'react';
+import Banner from '../Banner'; // Import Banner component
 import '../../App.css';
 import './Education.css';
+import UMBC from './UMBC.png';
+import UMBCBANNER from './UMBCBANNER.png';
 
 const Education = () => {
+  const educationData = [
+    {
+      year: 'Junior',
+      gpa: '3.9',
+      courses: [
+        'Software Engineering I',
+        'Database Mangmt Systems',
+        'Artificial Intelligence',
+        'Princ Of Operating Systems',
+        'Princ Computer Security',
+        'Intro to Machine Learning',
+      ],
+    },
+    {
+      year: 'Sophomore',
+      gpa: '3.9',
+      courses: [
+        'Introductory Physics II',
+        'Introduction To Linear Algebra',
+        'Computer Architecture',
+        'Data Structures',
+        'Introductory Physics I',
+        'Comp Organ & Assemb Lang',
+      ],
+    },
+    {
+      year: 'Freshman',
+      gpa: '3.8',
+      courses: [
+        'Computer Science I',
+        'Calc & Analy Geomtry I',
+        'Computer Science II',
+        'Discrete Structures',
+        'Calc & Analy Geometry II',
+        'Prin Of Prog Languages',
+      ],
+    },
+  ];
+
   return (
     <div className='Education'>
-      <div className="passage">
-        <p>University Of Maryland Baltimore County, Bachelors of Computer Science, Graduating December 2024 .</p>
-      </div>
-
+      <div className="content-wrapper">
+    <div className="passage">
+      <p>Hi Everybody My Name is Aamil And i Go To The Univeristy Of Maryalnd Baltimore County, I am currently a junior majoring in computer Science and i am set to graduate December of 2024. Go Retrievers</p>
+    </div>
+    <div className="education-image">
+      <img src={UMBC} alt="Descriptive Alt Text" />
+    </div>
+  </div>
       <div className="education-content">
-        <div className="year">
-          <div className="year-banner">
-            <h2>Junior</h2>
-          </div>
-          <div className="year-info">
-            <p>GPA: 3.9</p>
-            <h3>Important Courses</h3>
-            <ul>
-              <li>Software Engineering I</li>
-              <li>Database Mangmt Systems</li>
-              <li>Artificial Intelligence</li>
-              <li>Princ Of Operating Systems</li>
-              <li>Princ Computer Security</li>
-              <li>Intro to Machine Learning</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="year">
-          <div className="year-banner">
-            <h2>Sophomore</h2>
-          </div>
-          <div className="year-info">
-            <p>GPA: 3.9</p>
-            <h3>Important Courses</h3>
-            <ul>
-              <li>Introductory Physics II</li>
-              <li>Introduction To Linear Algebra</li>
-              <li>Computer Architecture</li>
-              <li>Data Structures</li>
-              <li>Introductory Physics I</li>
-              <li>Comp Organ & Assemb Lang</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="year">
-          <div className="year-banner">
-            <h2>Freshman</h2>
-          </div>
-          <div className="year-info">
-            <p>GPA: 3.8</p>
-            <h3>Important Courses</h3>
-            <ul>
-              <li>Computer Science I</li>
-              <li>Calc & Analy Geomtry I</li>
-              <li>Computer Science II</li>
-              <li>Discrete Structures</li>
-              <li>Calc & Analy Geometry II</li>
-              <li>Prin Of Prog Languages</li>
-            </ul>
-          </div>
-
-        </div>
-
+        {educationData.map(data => (
+          <Banner key={data.year} year={data.year} gpa={data.gpa} courses={data.courses} />
+        ))}
       </div>
-     
-
-      
-  
     </div>
   );
 };
