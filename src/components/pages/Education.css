@@ -70,6 +70,8 @@ year-info, .year-info p, .year-info h3, .year-info ul li {
 }
 
 .passage{
+  display: flex; 
+  flex-direction: column;
   text-align: center;
   flex: 1;
   color: #000000; 
