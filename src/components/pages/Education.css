@@ -74,7 +74,7 @@ year-info, .year-info p, .year-info h3, .year-info ul li {
   flex-direction: column;
   text-align: center;
   flex: 1;
-  color: #000000; 
+  color: hsl(0, 0%, 0%); 
   padding: 20px ; 
   height: 300px;
   margin: 10px 30px; 
@@ -84,7 +84,7 @@ year-info, .year-info p, .year-info h3, .year-info ul li {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   max-width: 80%; 
   transition: transform 0.3s ease;
-  font-size: 20px;
+  font-size: 40px;
   justify-content: center; 
   align-items: center; 
 
@@ -110,9 +110,18 @@ year-info, .year-info p, .year-info h3, .year-info ul li {
 
 @media (min-width: 768px) {
   .passage {
-    font-size: 1.25rem; 
+    font-size: 1.5rem; 
   }
 }
+
+
+@media (min-width: 1024px) {
+  .passage {
+    font-size: 2rem;
+    max-width: 60%; 
+  }
+}
+
 .passage:hover{
   transform: scale(1.05); /* Enlarges the banner by 5% on hover */
   z-index: 1; /* Ensures the enlarged banner is above others */
