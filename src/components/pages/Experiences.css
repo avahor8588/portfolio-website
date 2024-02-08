@@ -1,0 +1,47 @@
+.Experiences {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+}
+  
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+  
+.experience-item {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 70px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #000000;
+    background-color: rgb(238, 238, 238);
+    width: 90%; 
+}
+
+.experience-item:hover {
+    transform: scale(1.1);
+}
+  
+.experience-icon {
+    width: 50px;
+    height: 50px; 
+    margin-right: 20px; 
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        align-items: flex-start;
+    }
+  
+    .experience-icon {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+}

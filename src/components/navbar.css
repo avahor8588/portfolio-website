@@ -111,11 +111,11 @@
       top: 0;
       width: 100%;
       display: table;
-      align-self: flex-start; /* Align item at the top of its container */
+      align-self: flex-start; 
     }
   
     .nav-links:hover {
-    border-bottom: 2px solid #fff; /* Reduce the thickness of the border */
+    border-bottom: 2px solid #fff; 
     transition: all 0.2s ease-out;
     height: 25%;
       background-color: #fff;

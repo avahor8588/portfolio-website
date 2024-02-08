@@ -1,0 +1,115 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: rgb(254, 252, 252); }
+  }
+  
+  .AboutMe {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden; 
+    display: inline-block; 
+    border-right: .15em solid rgb(255, 255, 255); 
+    animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end 3.5s forwards;
+  }
+  
+  /* Center the AboutMe container */
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-info {
+    background-color: rgb(81, 0, 128); /* or any shade of purple you prefer */
+    min-height: 100vh; /* Make it at least as tall as the viewport */
+    width: 100%; /* Cover the full width */
+  }
+
+  .intro{
+    color: rgb(81, 0, 128);
+    text-align:  center;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .intro_container {
+    background-color: #f2edf9; 
+    padding: 20px; 
+    margin: 30px auto; 
+    width: 80%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    color: white; 
+    transition: transform 0.3s ease;
+  }
+  .intro_container:hover{
+    transform: scale(1.06);
+  }
+
+  .links-container {
+    text-align: center; 
+    margin-top: 20px; 
+  }
+  
+  .link-button {
+    background-color: #673ab7; 
+    color: white; 
+    padding: 10px 40px; 
+    margin: 0 20px;
+    text-decoration: none; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+    transition: background-color 0.3s; 
+  }
+  
+  .link-button:hover {
+    background-color: #805ad5; 
+  }
+
+  .Sports{
+    margin-top: 30px;
+    background-color: black;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Sports-Title{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+  }
+
+  .card-space {
+    margin-top: 20px; 
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin-top: 20px; 
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-space {
+      width: 100%; /* Optional: Adjust based on desired layout on smaller screens */
+    }
+  }
+  
