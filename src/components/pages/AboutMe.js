@@ -29,6 +29,11 @@ export default function AboutMe() {
           My Name is Aamil Vahora and I grew up in the Catonsville, Maryland Area My whole life. I attended Mount Hebron High School, and I Currently go to the University of Maryland Baltimore County. Some things I like to do on my free time is play sports, watch movies, and cook.
         </p>
       </div>
+
+      <div className="image-test">
+        <img src={MatlabLogo} alt="Matlab Logo" style={{ width: '100px', height: 'auto' }} />
+      </div>
+      
       <div className="links-container">
         <a href="https://docs.google.com/document/d/1t_1MGW4__XyzQae20U9LPr1nw_2f3iqA/edit?usp=sharing&ouid=117331970786774132442&rtpof=true&sd=true" className="link-button" target="_blank" rel="noopener noreferrer">My Resume</a>
         <a href="https://docs.google.com/document/d/1GWeEb8rTKP2QwmrxAeC4tvYDZzey2RrX/edit?usp=sharing&ouid=117331970786774132442&rtpof=true&sd=true" className="link-button" target="_blank" rel="noopener noreferrer">My Transcript</a>
