@@ -33,6 +33,77 @@ export default function AboutMe() {
         <a href="https://docs.google.com/document/d/1t_1MGW4__XyzQae20U9LPr1nw_2f3iqA/edit?usp=sharing&ouid=117331970786774132442&rtpof=true&sd=true" className="link-button" target="_blank" rel="noopener noreferrer">My Resume</a>
         <a href="https://docs.google.com/document/d/1GWeEb8rTKP2QwmrxAeC4tvYDZzey2RrX/edit?usp=sharing&ouid=117331970786774132442&rtpof=true&sd=true" className="link-button" target="_blank" rel="noopener noreferrer">My Transcript</a>
       </div>
+
+      <div className='Sports'>
+        <h2 className='Sports-Title'>
+          Skills
+        </h2>
+      </div>
+
+      <div className='cards-container'>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/Matlab_logo.jpeg" 
+      description="Matlab"
+    />
+  </div>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/python.png" 
+      description="Python"
+    />
+  </div>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/Ros.jpeg" 
+      description="Ros Robotics System"
+    />
+  </div>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/Gitlab.png" 
+      description="Gitlab"
+    />
+  </div>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/Gihtub.jpeg" 
+      description="Github"
+    />
+  </div>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/conda2.png" 
+      description="Conda"
+    />
+  </div>
+
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/86.png" 
+      description="Assembly"
+    />
+  </div>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/C.png" 
+      description="C"
+    />
+  </div>
+  <div className='card-space'>
+    <Card 
+      imagePath="/images/C++.jpeg" 
+      description="C++"
+    />
+  </div>
+
+
+  </div>
+
+
+
+
+
       <div className='Sports'>
         <h2 className='Sports-Title'>
           Sports
