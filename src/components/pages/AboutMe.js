@@ -2,21 +2,21 @@ import React from 'react';
 import './AboutMe.css';
 import Card from '../card';
 // Import images
-import MatlabLogo from './Images/Matlab_Logo.jpeg';
-import PythonLogo from './Images/python.png';
-import RosLogo from './Images/ros.jpeg';
-import GitlabLogo from './Images/Gitlab.png';
-import GithubLogo from './Images/Gihtub.jpeg';
-import CondaLogo from './Images/conda2.png';
-import AssemblyLogo from './Images/86.png';
-import CLogo from './Images/C.png';
-import CppLogo from './Images/C++.jpeg';
-import BjjLogo from './Images/bjj.jpeg';
-import SpikeballLogo from './Images/spikeball.jpeg';
-import FootballLogo from './Images/football.jpeg';
-import PastaLogo from './Images/pasta.jpeg';
-import SushiLogo from './Images/sushi.jpeg';
-import ButterChickenLogo from './Images/butterchicken.jpeg';
+import MatlabLogo from './Matlab_Logo.jpeg';
+import PythonLogo from './python.png';
+import RosLogo from './ros.jpeg';
+import GitlabLogo from './Gitlab.png';
+import GithubLogo from './Gihtub.jpeg';
+import CondaLogo from './conda2.png';
+import AssemblyLogo from './86.png';
+import CLogo from './C.png';
+import CppLogo from './C++.jpeg';
+import BjjLogo from './bjj.jpeg';
+import SpikeballLogo from './spikeball.jpeg';
+import FootballLogo from './football.jpeg';
+import PastaLogo from './pasta.jpeg';
+import SushiLogo from './sushi.jpeg';
+import ButterChickenLogo from './butterchicken.jpeg';
 
 export default function AboutMe() {
   return (
