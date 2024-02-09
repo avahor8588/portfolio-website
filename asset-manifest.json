@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.820cf5e6.css",
+    "main.js": "/portfolio-website/static/js/main.ef3e9432.js",
+    "static/media/home.png": "/portfolio-website/static/media/home.448befd2ccad143447f5.png",
+    "static/media/UMBC.png": "/portfolio-website/static/media/UMBC.856d65163758a1e39183.png",
+    "static/media/UMBCBANNER.png": "/portfolio-website/static/media/UMBCBANNER.c329421ce7bc9aff5db4.png",
+    "static/media/leidos.png": "/portfolio-website/static/media/leidos.efd1e8c7c4d45a9f2745.png",
+    "static/media/umbcLogo.png": "/portfolio-website/static/media/umbcLogo.c68b5c0cce794d35ebfc.png",
+    "index.html": "/portfolio-website/index.html",
+    "main.820cf5e6.css.map": "/portfolio-website/static/css/main.820cf5e6.css.map",
+    "main.ef3e9432.js.map": "/portfolio-website/static/js/main.ef3e9432.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.820cf5e6.css",
+    "static/js/main.ef3e9432.js"
+  ]
+}
