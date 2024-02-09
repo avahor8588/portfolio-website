@@ -6,19 +6,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Education from './components/pages/Education';
 import Experiences from './components/pages/Experiences';
 import AboutMe from './components/pages/AboutMe';
+
 function App() {
   return (
-    <>
-      <Router basename={process.env.PUBLIC_URL}>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<HomePage />} exact />
-          <Route path='/Experiences' element={<Experiences />} />
-          <Route path='/AboutMe' element={<AboutMe />} />
-          <Route path='/Education' element={<Education />} />
-        </Routes>
-      </Router>
-    </>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/experiences' element={<Experiences />} />
+        <Route path='/aboutme' element={<AboutMe />} />
+        <Route path='/education' element={<Education />} />
+      </Routes>
+    </Router>
   );
 }
 
