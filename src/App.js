@@ -9,13 +9,13 @@ import AboutMe from './components/pages/AboutMe';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/website-portfolio">
         <Navbar />
         <Routes>
           <Route path='/' element={<HomePage />} exact />
-          <Route path='/Experiences' element={<Experiences />} />
-          <Route path='/AboutMe' element={<AboutMe />} />
-          <Route path='/Education' element={<Education />} />
+          <Route path='/experiences' element={<Experiences />} />
+          <Route path='/aboutme' element={<AboutMe />} />
+          <Route path='/education' element={<Education />} />
         </Routes>
       </Router>
     </>

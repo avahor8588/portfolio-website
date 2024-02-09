@@ -29,7 +29,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-        <a href="/" className="navbar-logo" onClick={closeMobileMenu}>Aamil Vahora</a>
+        <a Link to="/AboutMe" className="navbar-logo" onClick={closeMobileMenu}>Aamil Vahora</a>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>

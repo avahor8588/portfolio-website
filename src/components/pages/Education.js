@@ -4,7 +4,6 @@ import Banner from '../Banner'; // Import Banner component
 import '../../App.css';
 import './Education.css';
 import UMBC from './UMBC.png';
-import UMBCBANNER from './UMBCBANNER.png';
 
 const Education = () => {
   const educationData = [

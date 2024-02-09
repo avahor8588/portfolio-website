@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('/public/images/home.png'); 
+    background-image: url('./Images/home.png'); 
     color: white;
     text-align: center;
     background-size: cover;
