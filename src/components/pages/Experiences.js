@@ -26,13 +26,13 @@ export default function Experiences() {
     {
     title: "Miller Construction Services",
     year:'March 2023 - August 2023 (Part Time)',
-    summary: "I was a Full Stack Softwar Engineering Intern Here, where i worked on thier Database",
+    summary: "I was a Full Stack Software Engineering Intern Here, where i worked on thier Database",
     bullets: ["Aided in development of a mern stack database using node.js, React, CSS, and MySQL workbench to create a database where the company can track its construction services."]
     },
     {
     title: "Johns Hopkins University, Applied Physics Lab",
     year:'April 2022 - May 2023',
-    summary: "I was a Research Softwar Intern, where i worked full time during teh summern and then during school year wrote a paper on the research (5 Hours a week)",
+    summary: "I was a Research Software Intern, where i worked full time during the summer and then worked part time during school year where I wrote a paper on the research (5 Hours a week)",
     bullets: ["Overcame obstacles in Machine Learning Classification algorithm and developed a model of covid mortality rates using k-nearest neighbor algorithms and NumPy and Pandas in Python",
   "Participated In training sessions to develop projects using Python data science library and MATLAB to model visuals using CSV files", 
 "Wrote a research paper and created a model for the city learn challenge on a Proximal Policy Optimization Reinforcement Learning Algorithm linked with neural networks to reduce energy usage in a simulations"]
