@@ -20,7 +20,7 @@
     animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end 3.5s forwards;
   }
   
-  /* Center the AboutMe container */
+ 
   .container {
     display: flex;
     justify-content: center;
@@ -29,7 +29,8 @@
   .my-info {
     background-color: rgb(81, 0, 128); 
     min-height: 100vh; 
-    width: 100%; 
+    width: 100%;
+    padding-bottom: 50px; 
   }
 
   .intro{
@@ -113,3 +114,45 @@
     }
   }
   
+
+.Sports-Title, .AboutMe {
+  font-size: 2.5rem; 
+}
+
+@media (max-width: 768px) {
+  .AboutMe, .Sports-Title {
+    font-size: 1.5rem; 
+  }
+
+  .intro, .link-button, .year-info p, .year-info h3, .year-info ul li {
+    font-size: 1rem; 
+  }
+
+  .intro_container, .cards-container, .education-content, .links-container {
+    width: 90%;
+    margin: 10px auto; 
+  }
+
+  .card-space {
+    width: auto; 
+    margin: 10px; 
+  }
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+.contact-info a {
+  display: block; 
+  color: #FFF;
+  margin: 5px 0; 
+  font-size: 1.2rem; 
+  text-decoration: none; 
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}

@@ -1,45 +1,42 @@
-
-
-.Education{
-  background-color: #000000; 
-  padding: 20px; 
-  color: #ffffff; 
-
+.Education {
+  background-color: #000000;
+  padding: 20px;
+  color: #ffffff;
 }
+
 .education-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 20px;
-  
   padding-bottom: 20px;
 }
 
 .year {
-  flex: 0 1 calc(33% - 20px); 
+  flex: 0 1 calc(33% - 20px);
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .year:hover {
-  transform: scale(1.05); 
-  z-index: 1; 
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .year-banner {
-  background-color: #000000; 
+  background-color: #000000;
   color: rgba(255, 207, 84, 0.966);
   padding: 20px 20px;
   text-align: center;
 }
 
-year-info, .year-info p, .year-info h3, .year-info ul li {
-  color: #000000; 
+.year-info, .year-info p, .year-info h3, .year-info ul li {
+  color: #000000;
 }
 
 .year-info {
@@ -69,61 +66,64 @@ year-info, .year-info p, .year-info h3, .year-info ul li {
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
-.passage{
-  display: flex; 
+.passage {
+  display: flex;
   flex-direction: column;
   text-align: center;
   flex: 1;
-  color: hsl(0, 0%, 0%); 
-  padding: 20px ; 
+  color: hsl(0, 0%, 0%);
+  padding: 20px;
   height: 300px;
-  margin: 10px 30px; 
-  background-color: #edbf33; 
-  border: 1px solid #030202; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  max-width: 80%; 
+  margin: 10px 30px;
+  background-color: #edbf33;
+  border: 1px solid #030202;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
   transition: transform 0.3s ease;
-  font-size: 40px;
-  justify-content: center; 
-  align-items: center; 
-
+  font-size: 40px; 
+  justify-content: center;
+  align-items: center;
 }
 
 .education-image {
-  flex: 1; 
-  
+  flex: 1;
 }
 
 .education-image img {
-  width: 100%; 
-  height: auto; 
-
+  width: 100%;
+  height: auto;
 }
 
 .content-wrapper {
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
-  margin-bottom: 20px; 
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .passage {
+    font-size: 20px; 
+    max-width: 100%;
+    margin: 10px 0; 
+  }
 }
 
 @media (min-width: 768px) {
   .passage {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 }
-
 
 @media (min-width: 1024px) {
   .passage {
     font-size: 2rem;
-    max-width: 60%; 
+    max-width: 60%;
   }
 }
 
-.passage:hover{
-  transform: scale(1.05); /* Enlarges the banner by 5% on hover */
-  z-index: 1; /* Ensures the enlarged banner is above others */
-
+.passage:hover {
+  transform: scale(1.05); 
+  z-index: 1;
 }

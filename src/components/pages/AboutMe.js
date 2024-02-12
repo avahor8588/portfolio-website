@@ -22,12 +22,12 @@ export default function AboutMe() {
   return (
     <div className='my-info'>
       <div className="container">
-        <h1 className='AboutMe'>Who Am I</h1>
+        <h1 className='AboutMe'>Who I Am</h1>
       </div>
       <div className='intro_container'>
         <p className='intro'>
-          My Name is Aamil Vahora and I grew up in the Catonsville, Maryland Area My whole life. I attended Mount Hebron High School, and I Currently go to the University of Maryland Baltimore County. Some things I like to do on my free time is play sports, watch movies, and cook.
-        </p>
+          My name is Aamil Vahora. I grew up in the Catonsville, Maryland, area my entire life. I attended Mount Hebron High School and am currently enrolled at the University of Maryland Baltimore County. In my free time, I enjoy playing sports, watching movies, and cooking.
+        </p> 
       </div>
       <div className="links-container">
         <a href="https://docs.google.com/document/d/1t_1MGW4__XyzQae20U9LPr1nw_2f3iqA/edit?usp=sharing&ouid=117331970786774132442&rtpof=true&sd=true" className="link-button" target="_blank" rel="noopener noreferrer">My Resume</a>
@@ -56,19 +56,19 @@ export default function AboutMe() {
         <div className='card-space'>
           <Card 
             imagePath={RosLogo}
-            description="Ros Robotics System"
+            description="ROS Robotics System"
           />
         </div>
         <div className='card-space'>
           <Card 
             imagePath={GitlabLogo}
-            description="Gitlab"
+            description="GitLab"
           />
         </div>
         <div className='card-space'>
           <Card 
             imagePath={GithubLogo}
-            description="Github"
+            description="GitHub"
           />
         </div>
         <div className='card-space'>
@@ -106,19 +106,19 @@ export default function AboutMe() {
         <div className='card-space'>
           <Card 
             imagePath={BjjLogo}
-            description="On my Free time I love Practicing Brazilian Jiu-Jitsu, I go to a gym called Crazy 88 MMA and practice regularly"
+            description="In my free time, I love practicing Brazilian Jiu-Jitsu. I train regularly at Crazy 88 MMA."
           />
         </div>
         <div className='card-space'>
           <Card 
             imagePath={SpikeballLogo}
-            description="I also Love Playing SpikeBall especially on the beach, i play often with my friends whenever i get the chance"
+            description="I also love playing Spikeball, especially on the beach. I often play with my friends whenever I get the chance."
           />
         </div>
         <div className='card-space'>
           <Card 
             imagePath={FootballLogo}
-            description="I love watching Football and sometimes playing the sport, my favorite team is the Baltimore Ravens, they almost made it all the way this year :("
+            description="I enjoy watching football and occasionally playing the sport. My favorite team is the Baltimore Ravens."
           />
         </div>
       </div>
@@ -131,21 +131,26 @@ export default function AboutMe() {
         <div className='card-space'>
           <Card 
             imagePath={PastaLogo}
-            description="I love all types of Pasta. My favorite is Alfredo despite the image above lol."
+            description="I love all types of pasta. My favorite is Alfredo."
           />
         </div>
         <div className='card-space'> 
           <Card 
             imagePath={SushiLogo}
-            description="I could eat Sushi all day, I wasn't the biggest fan when I was younger, but I can tear up a shrimp tempura roll easily now."
+            description="I could eat sushi all day. Though I wasn't a big fan when I was younger, I now enjoy a shrimp tempura roll immensely."
           />
         </div>
         <div className='card-space'>
           <Card 
             imagePath={ButterChickenLogo}
-            description="I am from India so my mom has taught me how to cook all types of food including butter chicken which is my favorite."
+            description="Being from India, my mom has taught me to cook a variety of dishes, including my favorite: butter chicken."
           />
         </div>
+      </div>
+
+      <div className="contact-info">
+        <a href="mailto:aamilvahora786@gmail.com">aamilvahora786@gmail.com</a>
+        <a href="tel:+14436835070">+1 (443) 683-5070</a>
       </div>
     </div>
   );

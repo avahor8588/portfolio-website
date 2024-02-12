@@ -1,6 +1,6 @@
 // Education.js
 import React from 'react';
-import Banner from '../Banner'; // Import Banner component
+import Banner from '../Banner';
 import '../../App.css';
 import './Education.css';
 import UMBC from './UMBC.png';
@@ -12,11 +12,11 @@ const Education = () => {
       gpa: '3.9',
       courses: [
         'Software Engineering I',
-        'Database Mangmt Systems',
+        'Database Management Systems', // Corrected spelling
         'Artificial Intelligence',
-        'Princ Of Operating Systems',
-        'Princ Computer Security',
-        'Intro to Machine Learning',
+        'Principles of Operating Systems', // Made spelling consistent and formal
+        'Principles of Computer Security', // Made spelling consistent and formal
+        'Introduction to Machine Learning', // Made spelling consistent
       ],
     },
     {
@@ -24,11 +24,11 @@ const Education = () => {
       gpa: '3.9',
       courses: [
         'Introductory Physics II',
-        'Introduction To Linear Algebra',
+        'Introduction to Linear Algebra', 
         'Computer Architecture',
         'Data Structures',
         'Introductory Physics I',
-        'Comp Organ & Assemb Lang',
+        'Computer Organization & Assembly Language', 
       ],
     },
     {
@@ -36,11 +36,11 @@ const Education = () => {
       gpa: '3.8',
       courses: [
         'Computer Science I',
-        'Calc & Analy Geomtry I',
+        'Calculus & Analytical Geometry I', 
         'Computer Science II',
         'Discrete Structures',
-        'Calc & Analy Geometry II',
-        'Prin Of Prog Languages',
+        'Calculus & Analytical Geometry II', 
+        'Principles of Programming Languages', 
       ],
     },
   ];
@@ -48,15 +48,15 @@ const Education = () => {
   return (
     <div className='Education'>
       <div className="content-wrapper">
-    <div className="passage">
-      <p>Hi everybody my name is Aamil Vahora and I go to the Univeristy Of Maryland, Baltimore County. I am currently a junior majoring in Computer Science and I am set to graduate December of 2024. Go Retrievers!!</p>
-    </div>
-    <div className="education-image">
-      <img src={UMBC} alt="Descriptive Alt Text" />
-    </div>
-  </div>
+        <div className="passage">
+          <p>Hello everyone, my name is Aamil Vahora, and I am attending the University of Maryland, Baltimore County. I am currently a junior majoring in Computer Science, with an expected graduation date of December 2024. Go Retrievers!</p>
+        </div>
+        <div className="education-image">
+          <img src={UMBC} alt="UMBC Campus" /> 
+        </div>
+      </div>
       <div className="education-content">
-        {educationData.map(data => (
+        {educationData.map((data) => (
           <Banner key={data.year} year={data.year} gpa={data.gpa} courses={data.courses} />
         ))}
       </div>
