@@ -6,6 +6,9 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Education from './components/pages/Education';
 import Experiences from './components/pages/Experiences';
 import AboutMe from './components/pages/AboutMe';
+import Tesla from './components/pages/Tesla.js';
+import Leidos from './components/pages/Leidos.js';
+import JHU from './components/pages/JHU.js';
 
 function App() {
   return (
@@ -16,6 +19,10 @@ function App() {
         <Route path='/experiences' element={<Experiences />} />
         <Route path='/aboutme' element={<AboutMe />} />
         <Route path='/education' element={<Education />} />
+        <Route path='/Tesla' element={<Tesla />} />
+        <Route path='/Leidos' element={<Leidos />} />
+        <Route path='/JHU' element={<JHU />} />
+        
       </Routes>
     </Router>
   );

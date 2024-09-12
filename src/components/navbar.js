@@ -3,10 +3,12 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from './umbcLogo.png'; 
+import Dropdown from './Dropdown';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -19,17 +21,32 @@ function Navbar() {
     }
   };
 
+  const onMouseEnter = () => {
+    if (window.innerWidth >= 960) {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth >= 960) {
+      setDropdown(false);
+    }
+  };
+
   useEffect(() => {
     showButton();
-  }, []);
+    window.addEventListener('resize', showButton);
 
-  window.addEventListener('resize', showButton);
+    return () => {
+      window.removeEventListener('resize', showButton);
+    };
+  }, []);
 
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-        <a Link to="/AboutMe" className="navbar-logo" onClick={closeMobileMenu}>Aamil Vahora</a>
+          <Link to="/AboutMe" className="navbar-logo" onClick={closeMobileMenu}>Aamil Vahora</Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -39,26 +56,21 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link
-                to='/Experiences'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Experiences
-              </Link>
+            <li className='nav-item'
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}>
+              <span className='nav-links'>
+                Experiences <i className='fas fa-caret-down' />
+              </span>
+              {dropdown && <Dropdown />}
             </li>
             <li className='nav-item'>
-            <Link to='/Education' className='nav-links' onClick={closeMobileMenu}>
-              <img src={logo} alt="Education" style={{ width: '50px' }} /> 
-            </Link>
-          </li>
+              <Link to='/Education' className='nav-links' onClick={closeMobileMenu}>
+                <img src={logo} alt="Education" style={{ width: '50px' }} /> 
+              </Link>
+            </li>
             <li>
-              <Link
-                to='/AboutMe'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/AboutMe' className='nav-links-mobile' onClick={closeMobileMenu}>
                 About Me
               </Link>
             </li>
