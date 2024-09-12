@@ -49,7 +49,7 @@ const Education = () => {
     <div className='Education'>
       <div className="content-wrapper">
         <div className="passage">
-          <p>Hello everyone, my name is Aamil Vahora, and I am attending the University of Maryland, Baltimore County. I am currently a junior majoring in Computer Science, with an expected graduation date of December 2024. Go Retrievers!</p>
+          <p>Hello everyone, my name is Aamil Vahora, and I am attending the University of Maryland, Baltimore County. I am currently a Senior majoring in Computer Science, with an expected graduation date of December 2024. Go Retrievers!</p>
         </div>
         <div className="education-image">
           <img src={UMBC} alt="UMBC Campus" /> 

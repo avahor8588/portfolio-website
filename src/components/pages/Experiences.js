@@ -8,6 +8,15 @@ export default function Experiences() {
   // Define your experience data
   const experiences = [
     {
+      title: "Tesla",
+      year:'May 2024 - August 2024 (Full Time)',
+      summary: "Software Engineering Intern - Autopilot Simulation",
+      bullets: ["Cut costs by reducing vehicle track testing via creating and validating FSD and traffic-aware cruise control simulated track tests using Unreal Engine, Python, and C++. (Linux) (Git)",
+        "Safeguard runtime failure using object-oriented practices in the Tesla Autopilot simulation Infrastructure in an Entity Component system using C++ and HIL (Autopilot ECU) to run FSD in a simulated environment",
+        "Querying PostgreSQL databases and writing Python scripts to highlight similarities in track and simulation"]
+     
+    },
+    {
       title: "UMBC",
       year:'August 2023 - Present (Part Time)',
       summary: "I am Currently a Teaching Fellow For the data Structures Course at UMBC",
