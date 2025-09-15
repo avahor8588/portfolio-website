@@ -1,0 +1,166 @@
+.tesla-page {
+  background: #0b0f14;
+  min-height: 100vh;
+}
+
+.tesla-hero {
+  background: radial-gradient(1200px 400px at 80% 20%, rgba(239, 68, 68, 0.25), transparent), linear-gradient(180deg, #111827 0%, #0b0f14 100%);
+  padding: 4rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text .badge {
+  display: inline-block;
+  background: #ef4444;
+  color: #fff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+.hero-subtitle {
+  color: #fca5a5;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.hero-meta {
+  color: #e5e7eb;
+  margin-top: 0.5rem;
+}
+
+.hero-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  color: #fee2e2;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove photo container when using SVG car */
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0 4rem;
+}
+
+.card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  color: #e5e7eb;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.card h3 {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.card ul {
+  margin-left: 1.1rem;
+}
+
+.card li {
+  margin: 0.4rem 0;
+}
+
+.card.highlight {
+  border-color: rgba(239, 68, 68, 0.4);
+  box-shadow: 0 12px 35px rgba(239, 68, 68, 0.15);
+}
+
+/* Animated speed lines */
+.speed-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.speed-lines span {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.45), rgba(255,255,255,0));
+  top: calc(10% + 18% * var(--i));
+  left: -150px;
+  animation: speed 2s linear infinite;
+  opacity: 0.7;
+}
+
+.speed-lines span:nth-child(1) { --i: 0; animation-delay: 0s; }
+.speed-lines span:nth-child(2) { --i: 1; animation-delay: 0.3s; }
+.speed-lines span:nth-child(3) { --i: 2; animation-delay: 0.6s; }
+.speed-lines span:nth-child(4) { --i: 3; animation-delay: 0.9s; }
+.speed-lines span:nth-child(5) { --i: 4; animation-delay: 1.2s; }
+
+@keyframes speed {
+  0% { transform: translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(900px); opacity: 0; }
+}
+
+/* Removed wheel rotation when using real photo */
+
+/* Parallax road */
+/* Removed road stripe when using real photo */
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  background: rgba(239, 68, 68, 0.12);
+  color: #fecaca;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+}

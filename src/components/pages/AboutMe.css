@@ -9,15 +9,13 @@
   }
   
   .AboutMe {
-    margin-top: 20px;
+    margin: 24px auto 12px;
     text-align: center;
-    font-size: 60px;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden; 
-    display: inline-block; 
-    border-right: .15em solid rgb(255, 255, 255); 
-    animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end 3.5s forwards;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ffffff, #c7d2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
  
@@ -27,57 +25,61 @@
   }
 
   .my-info {
-    background-color: rgb(81, 0, 128); 
+    background: linear-gradient(135deg, #0b1220 0%, #0b0f14 100%);
     min-height: 100vh; 
     width: 100%;
-    padding-bottom: 50px; 
+    padding: 32px 0 50px; 
   }
 
   .intro{
-    color: rgb(81, 0, 128);
-    text-align:  center;
-    margin-top: 20px;
-    font-size: 25px;
+    color: #111827;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 1.05rem;
+    line-height: 1.8;
   }
 
   .intro_container {
-    background-color: #f2edf9; 
-    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.96); 
+    padding: 2rem 2.25rem; 
     margin: 30px auto; 
-    width: 80%; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    color: white; 
-    transition: transform 0.3s ease;
+    width: min(900px, 86%);
+    border-radius: 16px; 
+    box-shadow: 0 16px 40px rgba(0,0,0,0.25); 
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .intro_container:hover{
-    transform: scale(1.06);
+    transform: translateY(-3px);
+    box-shadow: 0 22px 55px rgba(0,0,0,0.32);
   }
 
   .links-container {
     text-align: center; 
-    margin-top: 20px; 
+    margin-top: 16px; 
   }
   
   .link-button {
-    background-color: #673ab7; 
+    display: inline-block;
+    background: linear-gradient(45deg, #3b82f6, #1d4ed8); 
     color: white; 
-    padding: 10px 40px; 
-    margin: 0 20px;
+    padding: 12px 24px; 
+    margin: 0 10px 4px;
     text-decoration: none; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
-    transition: background-color 0.3s; 
+    border-radius: 10px; 
+    box-shadow: 0 10px 25px rgba(59,130,246,0.25); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
   }
   
   .link-button:hover {
-    background-color: #805ad5; 
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(59,130,246,0.35);
   }
 
   .Sports{
-    margin-top: 30px;
-    background-color: black;
-    height: 180px;
+    margin-top: 34px;
+    background-color: transparent;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,8 +87,18 @@
 
   .Sports-Title{
     text-align: center;
-    color: white;
-    font-size: 90px;
+    color: #ffffff;
+    font-size: 2rem;
+    position: relative;
+  }
+  .Sports-Title:after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 10px auto 0;
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+    border-radius: 2px;
   }
 
   .card-space {
@@ -99,7 +111,7 @@
     display: flex;
     justify-content: center; 
     flex-wrap: wrap; 
-    gap: 20px; 
+    gap: 18px; 
     margin-top: 20px; 
   }
   
@@ -143,16 +155,45 @@
   text-align: center;
   margin-top: 30px;
   color: white;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  margin: 30px auto;
+  width: min(900px, 86%);
+}
+
+.contact-info h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.contact-item strong {
+  color: #e0e7ff;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 .contact-info a {
-  display: block; 
-  color: #FFF;
-  margin: 5px 0; 
-  font-size: 1.2rem; 
-  text-decoration: none; 
+  color: #f1f5f9;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
+  color: #60a5fa;
   text-decoration: underline;
 }
