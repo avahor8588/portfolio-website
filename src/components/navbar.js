@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './navbar.css';
 import logo from './umbcLogo.png'; 
 import Dropdown from './Dropdown';
 

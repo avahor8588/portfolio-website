@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import './App.css';
 import HomePage from './components/pages/HomePage';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
@@ -11,6 +11,7 @@ import Leidos from './components/pages/Leidos.js';
 import JHU from './components/pages/JHU.js';
 import Qualcomm from './components/pages/Qualcomm.js';
 import Projects from './components/pages/Projects.js';
+import Resume from './components/pages/Resume.js';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/JHU' element={<JHU />} />
         <Route path='/Qualcomm' element={<Qualcomm />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/resume' element={<Resume />} />
         
       </Routes>
     </Router>
