@@ -9,6 +9,8 @@ import AboutMe from './components/pages/AboutMe';
 import Tesla from './components/pages/Tesla.js';
 import Leidos from './components/pages/Leidos.js';
 import JHU from './components/pages/JHU.js';
+import Qualcomm from './components/pages/Qualcomm.js';
+import Projects from './components/pages/Projects.js';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path='/Tesla' element={<Tesla />} />
         <Route path='/Leidos' element={<Leidos />} />
         <Route path='/JHU' element={<JHU />} />
+        <Route path='/Qualcomm' element={<Qualcomm />} />
+        <Route path='/projects' element={<Projects />} />
         
       </Routes>
     </Router>

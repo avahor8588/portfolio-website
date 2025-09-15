@@ -26,8 +26,14 @@ export default function AboutMe() {
       </div>
       <div className='intro_container'>
         <p className='intro'>
-          My name is Aamil Vahora. I grew up in the Catonsville, Maryland, area my entire life. I attended Mount Hebron High School and am currently enrolled at the University of Maryland Baltimore County. In my free time, I enjoy playing sports, watching movies, and cooking.
-        </p> 
+          I'm Aamil Vahora, a Computer Science graduate from the University of Maryland, Baltimore County (UMBC) with a passion for software engineering and technology innovation. Currently working as a Software Engineer at Qualcomm, I specialize in low-level systems programming, crash dump analysis, and Windows driver development.
+        </p>
+        <p className='intro'>
+          My journey in technology spans from autonomous vehicle simulation at Tesla to research at Johns Hopkins Applied Physics Lab. I'm passionate about solving complex technical challenges and building innovative solutions that make a real impact.
+        </p>
+        <p className='intro'>
+          When I'm not coding, you'll find me practicing Brazilian Jiu-Jitsu, playing Spikeball, or experimenting with new recipes in the kitchen. I believe in continuous learning and staying curious about the world around me.
+        </p>
       </div>
       <div className="links-container">
         <a href="https://docs.google.com/document/d/1ZtRtVhPCvWsdLq8tikTIMaqY4jxFTqQM/edit?usp=sharing&ouid=117331970786774132442&rtpof=true&sd=true" className="link-button" target="_blank" rel="noopener noreferrer">My Resume</a>
@@ -149,8 +155,21 @@ export default function AboutMe() {
       </div>
 
       <div className="contact-info">
-        <a href="mailto:aamilvahora786@gmail.com">aamilvahora786@gmail.com</a>
-        <a href="tel:+14436835070">+1 (443) 683-5070</a>
+        <h3>Contact Information</h3>
+        <div className="contact-details">
+          <div className="contact-item">
+            <strong>Email:</strong> <a href="mailto:aamilvahora786@gmail.com">aamilvahora786@gmail.com</a>
+          </div>
+          <div className="contact-item">
+            <strong>Phone:</strong> <a href="tel:+14436835070">+1 (443) 683-5070</a>
+          </div>
+          <div className="contact-item">
+            <strong>Location:</strong> 1332 Lincoln Wood Drive, Catonsville, MD 21228
+          </div>
+          <div className="contact-item">
+            <strong>Portfolio:</strong> <a href="https://avahor8588.github.io/portfolio-website/" target="_blank" rel="noopener noreferrer">avahor8588.github.io/portfolio-website/</a>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -22,15 +22,11 @@ function Navbar() {
   };
 
   const onMouseEnter = () => {
-    if (window.innerWidth >= 960) {
-      setDropdown(true);
-    }
+    setDropdown(true);
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth >= 960) {
-      setDropdown(false);
-    }
+    setDropdown(false);
   };
 
   useEffect(() => {
@@ -56,10 +52,10 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className='nav-item'
+            <li className='nav-item dropdown-parent'
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}>
-              <span className='nav-links'>
+              <span className='nav-links dropdown-trigger' role='button' aria-haspopup='true' aria-expanded={dropdown} onClick={() => setDropdown((v) => !v)}>
                 Experiences <i className='fas fa-caret-down' />
               </span>
               {dropdown && <Dropdown />}
@@ -67,6 +63,11 @@ function Navbar() {
             <li className='nav-item'>
               <Link to='/Education' className='nav-links' onClick={closeMobileMenu}>
                 <img src={logo} alt="Education" style={{ width: '50px' }} /> 
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                Projects
               </Link>
             </li>
             <li>
